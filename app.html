@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/app.css"> 
+</head>
+<body>
+    
+    <!-- 构建app界面结构 -->
+    <div class="main">
+        <!-- 头部标题区域 -->
+        <div class="header">
+            城市学院云音乐
+        </div>
+        <!-- 歌曲列表区域 -->
+        <div class="music_list">
+            <!-- 歌曲项 -->
+            <div class="item">
+                <div class="item-icon">
+                    
+                </div>
+               <ul></ul>
+            </div>
+        </div>
+        <!-- 控制区域 -->
+        <div class="music">
+            <div class="musicL">
+                <button class="iconfont icon-shangyishou" ><img src="img/上一首.png" width="20" height="20"/></button>
+                <span class="play" id="play">
+                    <button class="iconfont icon-bofang"><img src="img/播放.png" width="20" height="20"/></button>
+                </span>
+                <button class="iconfont icon-xiayishou"><img src="img/下一首.png" width="20" height="20"/></button>
+            </div>
+    
+            <div class="progress">
+                <span class="start_time" id="start_time">00:00</span>
+                <div class="load" id="load">
+                    <div class="circle" id="circle">
+                        <div class="round" id="round">
+    
+                        </div>
+    
+                    </div>
+                </div>
+                <span class="total_time" id="total_time">00:00</span>
+            </div>
+        </div>
+
+        <audio id="audio" autoplay="autoplay"></audio>
+
+    </div>
+
+    <script src="js/app.js""></script>
+
+</body>
+</html>

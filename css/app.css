@@ -1,0 +1,189 @@
+.main{
+    position: absolute;
+    left:50%;
+    top:50%;
+    margin-left:-200px;
+    margin-top:-300px;
+    width:400px;
+    height: 600px;
+    background-color:#ddd;
+    box-shadow:10px 10px 20px rgba(0,0,0,0.5); /*盒子阴影*/
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+ul li {
+	list-style: none;
+}
+/*对主界面中三个组成部分进行绝对定位*/
+.header,
+.music_list,
+.music{
+    position: absolute;
+    left:0;
+    right:0;
+}
+
+.header{
+    top:0;
+    height:60px;
+    line-height:60px;
+    font-size:1.2rem;/*设置字体大小为默认大小1.2倍*/
+    text-align:center; /*设置文本水平居中*/
+    letter-spacing:5px; /*设置字符间距*/
+    color:#eee;
+    background-color:#20A4F1;
+}
+.music{
+    bottom:0;
+    height: 80px;
+    background-color:#20A4F1; .
+    margin: 20px auto;
+    line-height: 40px;
+}
+.music_list{
+    top:60px;
+    bottom:80px;
+    overflow-y: scroll;
+}
+/*设置歌曲列表项效果*/
+.item{
+    position: relative;
+    left:0;
+    right:0;
+    height: 50px;
+    line-height: 50px;
+    box-sizing: border-box;
+}
+.item>div{
+    display:inline-block;
+    padding:0 5px;
+    box-sizing:border-box;
+}
+
+.item-icon{
+    position: absolute;
+    left:0;
+    width:50px;
+    text-align: center;
+}
+.item-icon>img{
+    margin-top:9px;
+}
+.item-size{
+    position: absolute;
+    right: 0;
+    width:80px;
+}
+.item-name{
+    position: absolute;
+    left:50px;
+    right: 80px;
+}
+
+
+
+
+
+.musicL {
+    bottom:0;
+    height: 40px;
+    margin: 0px auto;
+    line-height: 40px;
+    text-align: center;
+}
+
+.iconfont {
+	background-color: #fff;
+	margin: 0 10px
+}
+
+.progress {
+	float: left;
+	font-size: 14px;
+	width: 300px;
+	height: 40px;
+	margin-left: 50px;
+    color: #fff;
+}
+
+.progress span {
+	margin: 0 4px;
+}
+
+.load {
+	display: inline-block;
+	width: 200px;
+	height: 5px;
+	background: #ddd;
+	cursor: pointer;
+	position: relative;
+	top: -2px;
+}
+
+.circle {
+	width: 0px;
+	height: 5px;
+	background: red;
+	position: relative;
+	left: 0;
+	top: 0;
+}
+
+.round {
+	position: absolute;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: crimson;
+	left: 0px;
+	border: 3px solid #fff;
+	top: -5px;
+	margin-left: -7px;
+}
+
+
+.music_list li {
+	height: 40px;
+	border-bottom: 1px solid #ccc;
+	line-height: 40px;
+	cursor: pointer;
+}
+
+.music_list li span {
+	margin: 0 10px;
+	width: 220px;
+	float: left;
+}
+
+.music_list .title span {
+	font-size: 18px;
+}
+
+.music_list li:hover {
+	border-left: 2px solid #242424;
+	background: rgba(255, 255, 255, 0.5);
+}
+
+.music_list ul .title:hover {
+	border-left: 0px;
+	background: #242424;
+}
+
+.music .musicL i {
+	cursor: pointer;
+}
+
+/*伪对象选择器*/
+::-webkit-scrollbar{
+    width:2px;
+    background-color: #eee;
+}
+
+::-webkit-scrollbar-thumb{
+    width:2px;
+    background-color:#20A4F1;
+}
